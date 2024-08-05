@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="./img/Imagen1.png" type="image/x-icon">    
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/logo.png" alt="Logo del encriptador de texto">
+        <h1 class="titulo">- Encriptador de Texto Online -</h1>
+    </header>
+
+    <main>
+        <div class="box-1">
+            <textarea id="txt" cols="30" rows="10" placeholder="Ingresar texto"></textarea>
+
+            <div class="warning">
+                <p><i class="fa-solid fa-circle-exclamation"></i> Solo se admiten letras minúsculas y sin tildes.</p>
+            </div>
+
+            <div class="btns">
+                <button class="btn-enc">
+                    <i class="fa-solid fa-lock"></i> Encriptar
+                </button>
+
+                <button class="btn-desc">
+                    <i class="fa-solid fa-unlock"></i> Desencriptar
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-2">
+                <img id="img-error" src="./imagenes/caritatriste.jpg" alt="Imagen de error">
+
+                <div id="msg-error" class="mensaje">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+                <div id="resultado">
+                    <textarea readonly id="txt-2"></textarea>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p>Creado por OsquitarNET</p>
+        <p><span id="parrafo">⭣ Clic here ⭣</span></p>
+        <br>
+        <a href="https://github.com/Mad-CaTs" target="_blank"><i id="icon" class="fa-brands fa-github" style="color: #1b0100;"></i></a>
+        <a href="#" class="icondc"><i id="icon" class="fa-brands fa-discord" style="color: #1b0100;"></i></a>
+        <a href="https://www.linkedin.com/in/markus-perez" target="_blank"><i id="icon" class="fa-brands fa-linkedin" style="color: #1b0100;"></i></a>
+    </footer>  
+    
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
